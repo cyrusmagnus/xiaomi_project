@@ -1,0 +1,48 @@
+body
+    font-family: $ff
+    font-size: 14px
+    line-height: 1.4
+    font-weight: 400
+    color: $color_1
+
+.container
+    width: 1200px
+    margin: 0 auto
+
+.header_1
+    font-weight: 700
+    font-size: 64px
+    line-height: 77px
+    margin: 60px 0 5px
+
+.subtitle
+    display: block
+    margin: 0 0 60px
+    font-weight: 400
+    font-size: 32px
+    line-height: 39px
+    color: $color_3
+
+.slick-dots 
+    position: absolute
+
+    li
+        &:not(:first-child)
+            padding-top: 10px
+
+    button
+        width: 2px
+        height: 24px
+        font-size: 0
+        padding: 0
+        border: none
+        background-color: $color_1
+        cursor: pointer
+        @include trans
+
+        &:hover
+            background-color: $color_4
+
+.slick-active 
+    button
+        background-color: $color_4
