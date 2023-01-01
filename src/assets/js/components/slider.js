@@ -1,10 +1,13 @@
 $(function(){
 
-    $('.bike-slider').slick({
+    $('.bike-slider, .slider__items').slick({
+        fade: true,
+        speed: 2000,
         arrows: false,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 4000
     });
 
 });
+
