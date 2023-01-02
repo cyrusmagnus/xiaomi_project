@@ -1,38 +1,63 @@
 .characteristics
     margin-bottom: 150px
 
-    .characteristics__head
-        margin: 0 0 40px
+.characteristics__head
+    margin: 0 0 40px
 
+.characteristics__inner
+    display: flex
+    justify-content: space-between
+
+.characteristics__img
+    display: inline-flex
+    align-self: center
+    border-radius: 0px 0px 200px 0px
+
+.characteristics__items
+    flex-basis: 570px
+    margin-right: 60px
+
+.characteristics__list
+    &:not(:last-child)
+        margin-top: 30px
+
+.characteristics__title
+    padding: 2px 0 3px
+    text-transform: uppercase
+    background-color: $color_1
+    color: $color_2
+    font-weight: 700
+
+.characteristics__line
+    display: flex
+    padding-top: 5px
+
+.characteristics__name
+    flex-basis: 285px
+    padding-right: 25px
+
+.characteristics__descr
+    flex-basis: 285px
+
++max(1110px)
+    .characteristics
+        margin-bottom: 50px
+
++small
     .characteristics__inner
-        display: flex
-        justify-content: space-between
+        flex-wrap: wrap
 
     .characteristics__img
-        align-self: center
-        border-radius: 0px 0px 200px 0px
+        order: -1
+        width: 100%
+        margin-bottom: 30px
 
     .characteristics__items
-        flex-basis: 570px
-
-    .characteristics__list
-        &:not(:last-child)
-            margin-top: 30px
-
-    .characteristics__title
-        padding: 2px 0 3px
-        text-transform: uppercase
-        background-color: $color_1
-        color: $color_2
-        font-weight: 700
-
-    .characteristics__line
-        display: flex
-        padding-top: 5px
-
+        flex-basis: 100%
+        margin-right: 0
+    
     .characteristics__name
-        flex-basis: 285px
-        padding-right: 25px
-
+        flex-basis: 50%
+    
     .characteristics__descr
-        flex-basis: 285px
+        flex-basis: 50%

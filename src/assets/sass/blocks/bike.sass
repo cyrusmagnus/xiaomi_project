@@ -1,64 +1,96 @@
 .bike
     padding: 100px 0 150px
 
+.bike__inner
+    display: flex
+    justify-content: space-between
+
+.bike__column-slider
+    flex-basis: 630px
+    max-width: 630px
+    margin-left: 30px
+
+.bike__text
+    max-width: 420px
+
+    &:not(:last-child)
+        margin-top: 20px
+
+.bike__link
+    display: inline-block
+    margin-top: 80px
+    background-color: $color_1
+    color: $color_2
+    padding: 28px 80px
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 1.1em
+    text-transform: uppercase
+    @include trans
+
+    &:hover
+        background-color: $color_4
+
+.bike-slider
+    .slick-dots
+        top: 52px
+        right: 0
+
+.bike__list
+    display: flex
+    justify-content: space-around
+    margin-top: 24px
+
+.bike__list-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    min-width: 160px
+    min-height: 58px
+    
+.bike__list-num
+    font-weight: 700
+    text-transform: uppercase
+
+.bike__list-text
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    margin: auto 0
+
++max(1110px)
+    .bike
+        padding: 0
+
     .bike__inner
-        display: flex
-        justify-content: space-between
-
-    .bike__column-slider
-        flex-basis: 630px
-        max-width: 630px
-        margin-left: 30px
-
+        flex-wrap: wrap
+    
     .bike__text
-        max-width: 420px
-
-        &:not(:last-child)
-            margin-top: 20px
-
+        max-width: 100%
+    
     .bike__link
-        display: inline-block
-        margin-top: 80px
-        background-color: $color_1
-        color: $color_2
-        padding: 28px 80px
-        font-size: 20px
-        line-height: 24px
-        letter-spacing: 1.1em
-        text-transform: uppercase
-        @include trans
+        margin-top: 30px
 
-        &:hover
-            background-color: $color_4
+    .bike__column
+        margin-bottom: 30px
+    
+    .bike__column-slider
+        max-width: 100%
+        margin-left: 0
 
-    .bike-slider
-        .slick-dots
-            top: 52px
-            right: 0
-
++max(670px)
     .bike__list
-        display: flex
-        justify-content: space-around
-        margin-top: 24px
-
+        flex-wrap: wrap
+    
     .bike__list-item
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        min-width: 160px
-        min-height: 58px
-        
-    .bike__list-num
-        font-weight: 700
-        text-transform: uppercase
+        flex-basis: 50%
+        margin-bottom: 15px
 
-    .bike__list-text
-        font-weight: 400
-        font-size: 12px
-        line-height: 15px
-        margin: auto 0
-
++max(460px)
+    .bike__link
+        padding: 15px
+        letter-spacing: .9em
 
 
 

@@ -1,12 +1,31 @@
 .slider
     margin-bottom: 150px
 
-    .slider__item
-        padding-left: 50px
-
-    .slider__img
-        max-width: 1150px
-        
     .slick-dots
         top: 0
         left: 0
+
+.slider__item
+    padding-left: 50px
+
+.slider__img
+    max-width: 1150px
+
++max(1110px)
+    .slider
+        margin-bottom: 50px
+
+    .slider__img
+        object-fit: cover
+        height: 400px
+
++max(640px)
+    .slider__img
+        height: 250px
+    
+    .slider__item
+        padding-left: 10px
+
++max(460px)
+    .slider
+        display: none
